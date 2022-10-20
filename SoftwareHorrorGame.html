@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="SoftwareHorrorGame" startnode="2" creator="Twine" creator-version="2.5.1" format="SugarCube" format-version="2.36.1" ifid="060fb24e-e2ac-4778-ad48-1ac94ad3efe8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Handwriting - Start */
+	<tw-storydata name="SoftwareHorrorGame" startnode="5" creator="Twine" creator-version="2.5.1" format="SugarCube" format-version="2.36.1" ifid="060fb24e-e2ac-4778-ad48-1ac94ad3efe8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Handwriting - Start */
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -964,12 +964,12 @@ window.Health = function (CurHP, MaxHP, BarID, Horizontal, Container) {
 &lt;&lt;set $WhatisPuzzle = false&gt;&gt;
 &lt;&lt;set $ZenodoPuzzle = false&gt;&gt;
 &lt;&lt;set $LicensePuzzle = false&gt;&gt;
-&lt;&lt;set $CitationPuzzle = false&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="PassageHeader" tags="" position="950,350" size="100,100">&lt;&lt;if $CurHP &lt; 2 &gt;&gt;
+&lt;&lt;set $CitationPuzzle = false&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="PassageHeader" tags="" position="950,350" size="100,100">&lt;&lt;nobr&gt;&gt;&lt;&lt;if $CurHP &lt; 2 &gt;&gt;
 Ow man, almost out of cat lives... Luckily the cat is distracted by a butterfly. Quick, add some more.
 &lt;&lt;button &quot;expand livespan&quot;&gt;&gt;
 &lt;&lt;set $CurHP = $CurHP+1&gt;&gt;&lt;&lt;run Health($CurHP, $MaxHP, &quot;horizontalhealthbar&quot;, true)&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-
+&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if passage() neq &quot;start&quot; and passage() neq &quot;IntroductionText&quot; and passage() neq &quot;IntroductionText2&quot; and passage() neq &quot;IntroductionText3&quot; and passage() neq &quot;IntroductionText4&quot; and passage() neq &quot;EndingCredits&quot; and passage() neq &quot;EndingInfos&quot;&gt;&gt;
 &lt;div id=&quot;horizontalhealthbarbkg&quot; class=&quot;hzbarbkg&quot;&gt;&lt;div id=&quot;horizontalhealthbar&quot; class=&quot;hzbar&quot;&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;&lt;script&gt;&gt;$(document).one(&#39;:passagerender&#39;, function (ev) {
