@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="SoftwareHorrorGame" startnode="5" creator="Twine" creator-version="2.5.1" format="SugarCube" format-version="2.36.1" ifid="060fb24e-e2ac-4778-ad48-1ac94ad3efe8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Handwriting - Start */
+	<tw-storydata name="SoftwareHorrorGame" startnode="2" creator="Twine" creator-version="2.5.1" format="SugarCube" format-version="2.36.1" ifid="060fb24e-e2ac-4778-ad48-1ac94ad3efe8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Handwriting - Start */
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -957,6 +957,11 @@ window.Health = function (CurHP, MaxHP, BarID, Horizontal, Container) {
 	&lt;&lt;track &quot;start_bgm&quot;&gt;&gt;
 &lt;&lt;/createaudiogroup&gt;&gt;
 
+&lt;&lt;set _bgm3 = setup.SoundPath + &quot;Victory.mp3&quot;&gt;&gt;&gt;&gt;
+&lt;&lt;cacheaudio &quot;end_bgm&quot; _bgm3&gt;&gt;
+&lt;&lt;createaudiogroup &quot;:ui&quot;&gt;&gt;
+	&lt;&lt;track &quot;end_bgm&quot;&gt;&gt;
+&lt;&lt;/createaudiogroup&gt;&gt;
 
 &lt;&lt;set $DocPuzzle = false&gt;&gt;
 &lt;&lt;set $VersionControlPuzzle = false&gt;&gt;
@@ -3903,7 +3908,9 @@ But the license has yet to be applied to your research software! You dart to you
 &lt;&lt;/link&gt;&gt;
 &lt;span id=&quot;continue&quot;&gt;&lt;&lt;print _continue&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;set $LicensePuzzle = true&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="EndingCredits" tags="" position="1000,1700" size="100,100">Two minutes to midnight.
+&lt;&lt;set $LicensePuzzle = true&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="EndingCredits" tags="" position="1000,1700" size="100,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;end_bgm&quot; volume 0.5 play loop&gt;&gt;
+
+Two minutes to midnight.
 
 Frost is gathering at your window now. But you are drenched in sweat.
 
