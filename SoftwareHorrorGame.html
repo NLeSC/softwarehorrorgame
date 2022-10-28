@@ -1138,6 +1138,7 @@ window.Health = function (CurHP, MaxHP, BarID, Horizontal, Container) {
 For the best experience:
 * please turn on your sound and headphones
 * have paper and pen at hand to take notes
+* everything runs in chrome or firefox (safari won&#39;t work)
 &lt;a data-passage=&quot;IntroductionText&quot; class=&quot;link-internal link-image&quot;&gt;
 	&lt;img @src=&quot;setup.ImagePath+&#39;horrorVu.png&#39;&quot; style=&quot;display: block; margin: auto;&quot;
       width=100%&gt;
@@ -1600,7 +1601,7 @@ So which file is not software, but a cat picture?
 While this puzzle might seem impossible at first glance, you can figure it out via deduction!!
 If you need some help, here are a few hints:
 
-&lt;&lt;linkappend &quot;Hint 1: &quot; t8n&gt;&gt;From the first statement, we can see that Albert only knows the type, and every type has more than one file, So of course he doesn&#39;t know which one it is at this point. But since confidently says that Alan also doesnn&#39;t know, this means that the file can&#39;t be file_A_19 or file_B_18, because the numbers 18 and 19 exist only once. So it has to be of the type C or D&lt;&lt;/linkappend&gt;&gt;
+&lt;&lt;linkappend &quot;Hint 1: &quot; t8n&gt;&gt;From the first statement, we can see that Albert only knows the type, and every type has more than one file, So of course he doesn&#39;t know which one it is at this point. But since Albert confidently says that Alan also doesn&#39;t know, this means that the file can&#39;t be file_A_19 or file_B_18, because the numbers 18 and 19 exist only once. So it has to be of the type C or D&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;linkappend &quot;Hint 2: &quot; t8n&gt;&gt;The second statement means that Alan has deduced from Albert&#39;s first statement, that it has to be a file with type C or D. Since Alan now knows the file, the number he got can&#39;t be 14. So we have 3 files left that could be it.&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;linkappend &quot;Hint 3: &quot; t8n&gt;&gt;In the final statement, Albert has deduced that it has to be one of those final three files. He knows which type it is, and he says he now also knows which one is the file. This could only happen if it&#39;s  type C (if it were type D, it could have been either 15 or 17, and he would not have known which file it was).&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="WhatIsSoftwareD" tags="" position="1825,775" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if hasVisited(&quot;ProprietaryPuzzle&quot;)&gt;&gt;
@@ -1636,15 +1637,15 @@ A nice first step is to create a quick how-to guide. Luckily, you already have t
 &lt;div class=&quot;content&quot;&gt;\
 &lt;&lt;timed 3000ms&gt;&gt;Wait, what’s this? Your computer is sputtering, lights are flashing, the desk begins to shake!
 
-&lt;&lt;next 2000ms&gt;&gt;With a wretch, a strange shape emerges on your computer screen. It grows larger and larger, until it no longer seems contained in your monitor. The shape seems to be.. coming towards you? 
+&lt;&lt;next 3000ms&gt;&gt;With a wretch, a strange shape emerges on your computer screen. It grows larger and larger, until it no longer seems contained in your monitor. The shape seems to be.. coming towards you? 
 
 &lt;&lt;next 5000ms&gt;&gt;Wait, it IS coming towards you. It rises up from out of your screen, stretches out,  and rolls onto the floor. Your eyes widen upon realizing that the unholy object is moving. No! It’s alive!
 
-&lt;&lt;next 5000ms&gt;&gt;Standing before you now is the most terrifying and mangy cat that you have ever seen. Its fur stands on end in every conceivable direction, knotted with electrified wires. Currents coarse through its few whiskers. In its teeth hangs a computer mouse made in 1998.
+&lt;&lt;next 6000ms&gt;&gt;Standing before you now is the most terrifying and mangy cat that you have ever seen. Its fur stands on end in every conceivable direction, knotted with electrified wires. Currents coarse through its few whiskers. In its teeth hangs a computer mouse made in 1998.
 
-&lt;&lt;next 6000ms&gt;&gt;When its eyes fix upon you they sparkle and send a chill down your spine.
+&lt;&lt;next 8000ms&gt;&gt;When its eyes fix upon you they sparkle and send a chill down your spine.
 
-&lt;&lt;next 7000ms&gt;&gt;&lt;&lt;goto &quot;IntroductionText3&quot;&gt;&gt;
+&lt;&lt;next 9000ms&gt;&gt;&lt;&lt;goto &quot;IntroductionText3&quot;&gt;&gt;
 
 &lt;&lt;/timed&gt;&gt;
 
@@ -1979,7 +1980,7 @@ But it would indeed have been nice if you had some smarter way to organize all &
 
 &quot;If you would have used it from the start, it would have been very easy. But now you will have to do it the hard way, muhahahah&quot;.
 
-&quot;Now, I need a short nap, but some of my cousins hid around in your code. Just scroll through your code and put the url-pieces they left under their afterimages in chronological order. Only consider the files that make sense though, none of them should be older than 10 years. Couldn&#39;t be &lt;&lt;linkappend &quot;easier&quot;&gt;&gt;, ARE YOU STILL HERE? shooo, go away, I&#39;m trying to sleep&lt;&lt;/linkappend&gt;&gt;.&quot;
+&quot;Now, I need a short nap, but some of my cousins hid around in your code. Just scroll through your code and put the url-pieces they left under their image in chronological order. Only consider the files that make sense though, none of them should be older than 10 years. Couldn&#39;t be &lt;&lt;linkappend &quot;easier&quot;&gt;&gt;, ARE YOU STILL HERE? shooo, go away, I&#39;m trying to sleep&lt;&lt;/linkappend&gt;&gt;.&quot;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;map name=&quot;infographic&quot; id=&quot;Directory&quot;&gt;
@@ -3963,7 +3964,7 @@ Building on this experience, you want to create a workflow for when you collabor
 	&lt;&lt;print _textB&gt;&gt;&lt;&lt;/replace&gt;&gt;
 
     	&lt;&lt;if _checkedC&gt;&gt;
-		&lt;&lt;set _textC = &quot;@@.red;Not particularly useful, you&#39;d get many emails and you&#39;d have to read them all, too! Instead, make sure everyone writes useful messages to accompany the changes they made.&gt;&gt;&lt;&lt;/button&gt;&gt;@@&quot;&gt;&gt;
+		&lt;&lt;set _textC = &quot;@@.red;Not particularly useful, you&#39;d get many emails and you&#39;d have to read them all, too! Instead, make sure everyone writes useful messages to accompany the changes they made.@@&quot;&gt;&gt;
 	&lt;&lt;else&gt;&gt;
 		&lt;&lt;set _textC = &quot;&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
@@ -4011,7 +4012,7 @@ Building on this experience, you want to create a workflow for when you collabor
 	&lt;&lt;print _textH&gt;&gt;&lt;&lt;/replace&gt;&gt;
 
     &lt;&lt;if _checkedA and _checkedB and not _checkedC and not _checkedD and not _checkedE and _checkedF and not _checkedG and not _checkedH&gt;&gt;
-		&lt;&lt;goto &quot;ProjectStructure&quot;&gt;&gt;    
+		&lt;&lt;goto &quot;ProjectStructure&quot;&gt;&gt;
     &lt;&lt;else&gt;&gt;
     	&lt;&lt;set _continue = &quot;Well this is awkward, that&#39;s not quite right... You just lost one of your cat lives.&quot;&gt;&gt;
         &lt;&lt;set $CurHP = $CurHP-1&gt;&gt;&lt;&lt;run Health($CurHP, $MaxHP, &quot;horizontalhealthbar&quot;, true)&gt;&gt;
@@ -4199,9 +4200,9 @@ TestAdd1() { add(
 </tw-passagedata><tw-passagedata pid="46" name="TestingPuzzle4" tags="" position="1500,1301" size="100,100">&lt;&lt;set _continue = &quot;&quot;&gt;&gt;
 &quot;Prrrrr, you can be prrrrroud of yourself&quot; the cat says with an evil glow in its eyes.
 
-&quot;It seems I am still missing something&quot;, you think to yourself. What if the cat messes up my function &lt;code&gt;add(a, b) { return a + b; } &lt;/code&gt; and changes it from a &quot;plus +&quot; to a &quot;times *&quot; sign. Would my first test still work?
+&quot;It seems I am still missing something&quot;, you think to yourself. What if the cat messes up my function &lt;code&gt;add(a, b) { return a + b; } &lt;/code&gt; and changes it from a &quot;plus +&quot; to a &quot;times *&quot; sign. This would break my first test...
 
-Let&#39;s just add another, to be sure:
+Let&#39;s just add another, to make sure this case is taken care of:
 
   &lt;code&gt;TestAdd1() { add(2, 2) EQUALS 4) }&lt;/code&gt;
   
