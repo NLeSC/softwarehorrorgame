@@ -4266,7 +4266,13 @@ If you would like to learn more about software management and reproducible resea
 *	Reproducible research: https://the-turing-way.netlify.app/welcome
 *	What is software: https://doi.org/10.5281/zenodo.5504016
 *	Testing: https://the-turing-way.netlify.app/reproducible-research/testing/testing-unittest.html
-*	Documentation: https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html</tw-passagedata><tw-passagedata pid="49" name="WidgetTimer" tags="widget nobr" position="950,225" size="100,100">/* &lt;&lt;countdownTimer&gt;&gt; Widget - Start */
+*	Documentation: https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html
+
+&lt;&lt;button &quot;Previous page&quot; `previous()`&gt;&gt;&lt;&lt;/button&gt;&gt;
+
+&lt;&lt;button &quot;Restart game&quot;&gt;&gt;
+	&lt;&lt;run Engine.restart()&gt;&gt;
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="WidgetTimer" tags="widget nobr" position="950,225" size="100,100">/* &lt;&lt;countdownTimer&gt;&gt; Widget - Start */
 &lt;&lt;widget &quot;countdownTimer&quot;&gt;&gt;
 	&lt;&lt;set _seconds = $args[0]&gt;&gt;
 	&lt;&lt;set _minutes = Math.floor(_seconds / 60)&gt;&gt;
@@ -4646,8 +4652,9 @@ Oh no! What has the black cat done to your code? Have a look at the latest versi
 Initially it was &lt;a href=&quot;https://zenodo.org/record/7241532&quot; target=&quot;_blank&quot;&gt; all fine&lt;/a&gt;, but now &lt;a href=&quot;https://zenodo.org/record/7241587&quot; target=&quot;_blank&quot;&gt;the cat seized ownership :S&lt;/a&gt;
 
 [[What can you do?|CitationPuzzleB]]</tw-passagedata><tw-passagedata pid="66" name="CitationPuzzleB" tags="" position="1100,1825" size="100,100">There is a simple way to stay in control of ownership and to make sure you get the recognition you deserve. By adding a &lt;a href=&quot;https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files&quot; target=&quot;_blank&quot;&gt;CITATION file&lt;/a&gt; (CFF) to your project, you can determine how others cite your code as the citation file format is plain text with human- and machine-readable citation information.
-Can you create your own CITATION file to make sure the black cat does not take all the credit? 
-Sort all elements that should be included in a CITATION file to the green area, and leave all elements that are not part of a CFF file red:
+Can you create your own CITATION file to make sure the black cat does not take all the credit?
+
+&lt;&lt;linkappend &quot;Sort all elements&quot;&gt;&gt; (click on two to swap them)&lt;&lt;/linkappend&gt;&gt; that should be included in a CITATION file to the green area, and leave all elements that are not part of a CFF file red.
 &lt;&lt;set _correct to [false,false,false, false]&gt;&gt;
 &lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;correctcitation&quot;&gt;
