@@ -4110,6 +4110,8 @@ But you &lt;&lt;link &quot;made it&quot; &quot;ProjectStructure&quot;&gt;&gt;&lt
 &lt;&lt;if $license == &quot;CC BY&quot;&gt;&gt;
 	&lt;&lt;set _continue = &quot;CC BY is not recommended for software, but is rather appropriate for data and publications.&lt;br&gt;You just lost one of your cat lives.&quot;&gt;&gt;
     &lt;&lt;set $CurHP = $CurHP-1&gt;&gt;&lt;&lt;run Health($CurHP, $MaxHP, &quot;horizontalhealthbar&quot;, true)&gt;&gt;
+&lt;&lt;elseif ndef $license &gt;&gt;
+&lt;&lt;set _continue = &quot;Select one please!&quot;&gt;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;&lt;goto &quot;LicensePuzzle4&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
