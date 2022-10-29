@@ -109,6 +109,22 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 .correctcitation {background-color: green;}
 .wrongcitation {background-color: darkred;}
 
+#OverlayImg {
+	position: fixed;
+	display: none; /* Hidden by default */
+	z-index: 10000; /* Sit on top of everything */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url("setup.ImagePath+'horrorVu.png'");
+	background-size: contain;
+	background-color: #111;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 a.link-external::after {display:none;}
 
 .center {
@@ -1681,8 +1697,15 @@ You gasp.
 &lt;span style=&quot;float:center;text-align:right;&quot;&gt;“Let’ssssss &lt;&lt;link &quot;begin&quot; &quot;FirstPuzzles&quot;&gt;&gt;&lt;&lt;set $seconds =new Date().getSeconds()&gt;&gt;
 &lt;&lt;set $minutes =new Date().getMinutes()&gt;&gt;
 &lt;&lt;set $hours =new Date().getHours()&gt;&gt;&lt;&lt;/link&gt;&gt;,” the cat hisses.&lt;/span&gt;
-</tw-passagedata><tw-passagedata pid="20" name="FirstPuzzles" tags="" position="1650,126" size="100,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;night_bgm&quot; volume 0.5 play loop&gt;&gt;
-
+</tw-passagedata><tw-passagedata pid="20" name="FirstPuzzles" tags="" position="1650,125" size="100,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;night_bgm&quot; volume 0.5 play loop&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;timed 5s&gt;&gt;
+		&lt;&lt;run $(&quot;#OverlayImg&quot;).show()&gt;&gt;
+		&lt;&lt;timed 2s&gt;&gt;
+			&lt;&lt;run $(&quot;#OverlayImg&quot;).hide()&gt;&gt;
+		&lt;&lt;/timed&gt;&gt;
+	&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div id=&quot;OverlayImg&quot;&gt;&lt;/div&gt;
 The cat grins malevolently at you.
 
 “Don&#39;t mind the green bar that &lt;&lt;linkappend &quot;appeared&quot;&gt;&gt;, it&#39;s just the 9 lives that will remain once, EHEM, if you start your life as a cat&lt;&lt;/linkappend&gt;&gt;&quot;.
@@ -4012,7 +4035,8 @@ Building on this experience, you want to create a workflow for when you collabor
 	&lt;&lt;print _textH&gt;&gt;&lt;&lt;/replace&gt;&gt;
 
     &lt;&lt;if _checkedA and _checkedB and not _checkedC and not _checkedD and not _checkedE and _checkedF and not _checkedG and not _checkedH&gt;&gt;
-		&lt;&lt;goto &quot;ProjectStructure&quot;&gt;&gt;
+    &lt;&lt;set _continue = &quot;Awesome, all the selections are correct!&lt;br&gt;Let&#39;s continue our &lt;&lt;button [[quest|ProjectStructure]]&gt;&gt;&lt;&lt;/button&gt;&gt;!&quot;&gt;&gt;
+
     &lt;&lt;else&gt;&gt;
     	&lt;&lt;set _continue = &quot;Well this is awkward, that&#39;s not quite right... You just lost one of your cat lives.&quot;&gt;&gt;
         &lt;&lt;set $CurHP = $CurHP-1&gt;&gt;&lt;&lt;run Health($CurHP, $MaxHP, &quot;horizontalhealthbar&quot;, true)&gt;&gt;
@@ -4642,6 +4666,8 @@ And then all at once: the windows burst open, you take a breath of fresh, crisp 
 “I’ll take you to the cat café”, you tell it. “There you’ll get unlimited belly rubs for the rest of your life!”
 
 You switch off the computer, stand up, and leave your office. Now let’s hope the reviewers will be nice.
+
+And next time... Maybe you will make things easier for yourself and do some &lt;a href=&quot;https://www.esciencecenter.nl/news/the-practical-guide-to-software-management-plans-now-available/&quot; target=&quot;_blank&quot;&gt;software management&lt;/a&gt; from the start.
 
 [[You did it!!|EndingInfos]] And it only took you $timetofinish minutes.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="CitationPuzzleA" tags="" position="1100,1700" size="100,100">&lt;span style=&quot;float:right;text-align:right;&quot;&gt; “Now that I made a significant contribution to the project, I suggest you add me to the list of authors.”&lt;/span&gt;
