@@ -118,88 +118,13 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background-image: url('images/zombiecat.jpg');
+	background-image: url(images/zombiecat.ng);
 	background-size: contain;
 	background-color: #111;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-#OverlayImgEye1 {
-	position: fixed;
-	display: none; /* Hidden by default */
-	z-index: 10000; /* Sit on top of everything */
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 10%;
-	height: 10%;
-	overflow: hidden;
-	background-image: url('images/blackcateyes.jpg');
-	background-size: contain;
-	background-color: #111;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#OverlayImgEye2 {
-	position: fixed;
-	display: none; /* Hidden by default */
-	z-index: 10000; /* Sit on top of everything */
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 30%;
-	height: 30%;
-	overflow: hidden;
-	background-image: url('images/blackcateyes.jpg');
-	background-size: contain;
-	background-color: #111;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#OverlayImgEye3 {
-	position: fixed;
-	display: none; /* Hidden by default */
-	z-index: 10000; /* Sit on top of everything */
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 50%;
-	height: 50%;
-	overflow: hidden;
-	background-image: url('images/blackcateyes.jpg');
-	background-size: contain;
-	background-color: #111;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#OverlayImgEye4 {
-	position: fixed;
-	display: none; /* Hidden by default */
-	z-index: 10000; /* Sit on top of everything */
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 70%;
-	height: 70%;
-	overflow: hidden;
-	background-image: url('images/blackcateyes.jpg');
-	background-size: contain;
-	background-color: #111;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#OverlayImgEye5 {
-	position: fixed;
-	display: none; /* Hidden by default */
-	z-index: 10000; /* Sit on top of everything */
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background-image: url('images/blackcateyes.jpg');
-	background-size: contain;
-	background-color: #111;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 a.link-external::after {display:none;}
 
 .center {
@@ -1620,7 +1545,7 @@ Alright, this doesn&#39;t look too bad. Just reorder the steps on how to create 
 The cat just stares at you now, the edges of its mouth curling ever so slightly into a [[knowing grin|LicensePuzzle1]].</tw-passagedata><tw-passagedata pid="9" name="SharingCode" tags="" position="1099,1378" size="100,100">&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;timed 2s&gt;&gt;
 		&lt;&lt;run $(&quot;#OverlayImg&quot;).show()&gt;&gt;
-		&lt;&lt;timed 0.05s&gt;&gt;
+		&lt;&lt;timed 0.2s&gt;&gt;
 			&lt;&lt;run $(&quot;#OverlayImg&quot;).hide()&gt;&gt;
 		&lt;&lt;/timed&gt;&gt;
 	&lt;&lt;/timed&gt;&gt;
@@ -1781,38 +1706,6 @@ You gasp.
 &lt;&lt;set $minutes =new Date().getMinutes()&gt;&gt;
 &lt;&lt;set $hours =new Date().getHours()&gt;&gt;&lt;&lt;/link&gt;&gt;,” the cat hisses.&lt;/span&gt;
 </tw-passagedata><tw-passagedata pid="20" name="FirstPuzzles" tags="" position="1650,125" size="100,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;night_bgm&quot; volume 0.5 play loop&gt;&gt;
-&lt;&lt;nobr&gt;&gt;
-	&lt;&lt;timed 5s&gt;&gt;
-		&lt;&lt;run $(&quot;#OverlayImgEye1&quot;).show()&gt;&gt;
-		&lt;&lt;timed 0.05s&gt;&gt;
-			&lt;&lt;run $(&quot;#OverlayImgEye1&quot;).hide()&gt;&gt;
-            &lt;&lt;timed 0.1s&gt;&gt;
-            &lt;&lt;run $(&quot;#OverlayImgEye2&quot;).show()&gt;&gt;
-            &lt;&lt;timed 0.05s&gt;&gt;
-			&lt;&lt;run $(&quot;#OverlayImgEye2&quot;).hide()&gt;&gt;
-             &lt;&lt;timed 0.1s&gt;&gt;
-            &lt;&lt;run $(&quot;#OverlayImgEye3&quot;).show()&gt;&gt;
-            &lt;&lt;timed 0.05s&gt;&gt;
-			&lt;&lt;run $(&quot;#OverlayImgEye3&quot;).hide()&gt;&gt;
-            &lt;&lt;timed 0.1s&gt;&gt;
-            &lt;&lt;run $(&quot;#OverlayImgEye4&quot;).show()&gt;&gt;
-            &lt;&lt;timed 0.05s&gt;&gt;
-			&lt;&lt;run $(&quot;#OverlayImgEye4&quot;).hide()&gt;&gt;
-            &lt;&lt;timed 0.1s&gt;&gt;
-            &lt;&lt;run $(&quot;#OverlayImgEye5&quot;).show()&gt;&gt;
-            &lt;&lt;timed 0.05s&gt;&gt;
-			&lt;&lt;run $(&quot;#OverlayImgEye5&quot;).hide()&gt;&gt;
-		&lt;&lt;/timed&gt;&gt;
-	&lt;&lt;/timed&gt;&gt;
-    		&lt;&lt;/timed&gt;&gt;
-	&lt;&lt;/timed&gt;&gt;
-    		&lt;&lt;/timed&gt;&gt;
-	&lt;&lt;/timed&gt;&gt;
-    		&lt;&lt;/timed&gt;&gt;
-	&lt;&lt;/timed&gt;&gt;
-    		&lt;&lt;/timed&gt;&gt;
-	&lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;div id=&quot;OverlayImgEye1&quot;&gt;&lt;/div&gt;&lt;div id=&quot;OverlayImgEye2&quot;&gt;&lt;/div&gt;&lt;div id=&quot;OverlayImgEye3&quot;&gt;&lt;/div&gt;&lt;div id=&quot;OverlayImgEye4&quot;&gt;&lt;/div&gt;&lt;div id=&quot;OverlayImgEye5&quot;&gt;&lt;/div&gt;
 The cat grins malevolently at you.
 
 “Don&#39;t mind the green bar that &lt;&lt;linkappend &quot;appeared&quot;&gt;&gt;, it&#39;s just the 9 lives that will remain once, EHEM, if you start your life as a cat&lt;&lt;/linkappend&gt;&gt;&quot;.
