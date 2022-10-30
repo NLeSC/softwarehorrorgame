@@ -125,6 +125,38 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 	background-repeat: no-repeat;
 }
 
+#OverlayImg2 {
+	position: fixed;
+	display: none; /* Hidden by default */
+	z-index: 10000; /* Sit on top of everything */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url(images/angrycat.jpg);
+	background-size: contain;
+	background-color: #111;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#OverlayImg3 {
+	position: fixed;
+	display: none; /* Hidden by default */
+	z-index: 10000; /* Sit on top of everything */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url(images/blackcateyes.jpg);
+	background-size: contain;
+	background-color: #111;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 a.link-external::after {display:none;}
 
 .center {
@@ -1545,7 +1577,7 @@ Alright, this doesn&#39;t look too bad. Just reorder the steps on how to create 
 The cat just stares at you now, the edges of its mouth curling ever so slightly into a [[knowing grin|LicensePuzzle1]].</tw-passagedata><tw-passagedata pid="9" name="SharingCode" tags="" position="1099,1378" size="100,100">&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;timed 2s&gt;&gt;
 		&lt;&lt;run $(&quot;#OverlayImg&quot;).show()&gt;&gt;
-		&lt;&lt;timed 0.4s&gt;&gt;
+		&lt;&lt;timed 0.2s&gt;&gt;
 			&lt;&lt;run $(&quot;#OverlayImg&quot;).hide()&gt;&gt;
 		&lt;&lt;/timed&gt;&gt;
 	&lt;&lt;/timed&gt;&gt;
@@ -1705,7 +1737,15 @@ You gasp.
 &lt;span style=&quot;float:center;text-align:right;&quot;&gt;“Let’ssssss &lt;&lt;link &quot;begin&quot; &quot;FirstPuzzles&quot;&gt;&gt;&lt;&lt;set $seconds =new Date().getSeconds()&gt;&gt;
 &lt;&lt;set $minutes =new Date().getMinutes()&gt;&gt;
 &lt;&lt;set $hours =new Date().getHours()&gt;&gt;&lt;&lt;/link&gt;&gt;,” the cat hisses.&lt;/span&gt;
-</tw-passagedata><tw-passagedata pid="20" name="FirstPuzzles" tags="" position="1650,125" size="100,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;night_bgm&quot; volume 0.5 play loop&gt;&gt;
+</tw-passagedata><tw-passagedata pid="20" name="FirstPuzzles" tags="" position="1650,125" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;timed 2s&gt;&gt;
+		&lt;&lt;run $(&quot;#OverlayImg3&quot;).show()&gt;&gt;
+		&lt;&lt;timed 0.1s&gt;&gt;
+			&lt;&lt;run $(&quot;#OverlayImg3&quot;).hide()&gt;&gt;
+		&lt;&lt;/timed&gt;&gt;
+	&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div id=&quot;OverlayImg3&quot;&gt;&lt;/div&gt;
+&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;night_bgm&quot; volume 0.5 play loop&gt;&gt;
 The cat grins malevolently at you.
 
 “Don&#39;t mind the green bar that &lt;&lt;linkappend &quot;appeared&quot;&gt;&gt;, it&#39;s just the 9 lives that will remain once, EHEM, if you start your life as a cat&lt;&lt;/linkappend&gt;&gt;&quot;.
@@ -4076,7 +4116,15 @@ And just as you’re about to submit your materials to the publisher, a frigid b
 
 You keep on rambling, more to yourself than the cat...
 
-&quot;There shouldn&#39;t be any mistakes, right, right? I might not have had the nicest code managing going on, but I know how to write it, &lt;&lt;linkappend &quot;right?&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;The cat ROARS! &quot;What about all time you have to spent on debugging and maintenance and fixing inefficient code designs [[and...|TestingPuzzle1]]&quot;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="TestingPuzzle1" tags="" position="1150,1150" size="100,100">&quot;You have to write tests, TESTS I say!!!&quot;, the cat continues
+&quot;There shouldn&#39;t be any mistakes, right, right? I might not have had the nicest code managing going on, but I know how to write it, &lt;&lt;linkappend &quot;right?&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;The cat ROARS! &quot;What about all time you have to spent on debugging and maintenance and fixing inefficient code designs [[and...|TestingPuzzle1]]&quot;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="TestingPuzzle1" tags="" position="1150,1150" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;timed 2s&gt;&gt;
+		&lt;&lt;run $(&quot;#OverlayImg2&quot;).show()&gt;&gt;
+		&lt;&lt;timed 0.1s&gt;&gt;
+			&lt;&lt;run $(&quot;#OverlayImg2&quot;).hide()&gt;&gt;
+		&lt;&lt;/timed&gt;&gt;
+	&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div id=&quot;OverlayImg2&quot;&gt;&lt;/div&gt;
+&quot;You have to write tests, TESTS I say!!!&quot;, the cat continues
 
 &quot;What are tests&quot;, you quietly ask, scared that this will open a whole new pandoras box of work.
 
@@ -4084,7 +4132,7 @@ You keep on rambling, more to yourself than the cat...
 
 &quot;For example, normally you have to plough through old code and try to work out what it is supposed to be doing, right. To make sure everything is still as it should be, right?
 
-And every time you make a change to a piece of code, how can you be soundly asleep if you are not 100% sure that this change has not broken something?
+And every time you make a change to a piece of code, how can you be soundly &lt;&lt;linkappend &quot;asleep&quot;&gt;&gt; if you are not 100% sure that this change has not broken something&lt;&lt;/linkappend&gt;&gt;?
 
 This can be made efficient, you&#39;re wasting so much [[time|TestingPuzzle2]].&quot;</tw-passagedata><tw-passagedata pid="38" name="TestingPuzzle2" tags="" position="1300,1175" size="100,100">&quot;Alright, let&#39;s just have a go at it&quot;, you think. &quot;Hopefully the cat will be a bit kinder after you write those tests.&quot;
 
@@ -4273,6 +4321,8 @@ TestAdd2() { add(
 &quot;There are many more scenario&#39;s where things can go awry...&quot; that furrball starts.
 
 But you feel a lot more confident, now that you have some tests to inform you if everything is still working as it should.
+
+And even though these first tests that you wrote may look like (and actually are) a bit silly. Remember that code is alive. Something that is a simple function today, can tomorrow become very &lt;&lt;linkappend &quot;complicated&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;An example (true story):&lt;br&gt;a research group had a system that used a query, without any tests. At some point someone changed the query in such a way that it was returning results twice. The system was then adding up the total -- for a few weeks nobody noticed that the numbers were double of what they should be. Once they noticed, they fixed the query and added some tests. Later on, somebody changed the query again, only this time they spotted the double results straight away and avoided a second crisis.&lt;&lt;/linkappend&gt;&gt;.
 
 Finally, it is time to start [[sharing your code|SharingCode]]</tw-passagedata><tw-passagedata pid="48" name="EndingInfos" tags="" position="750,2361" size="100,100">&lt;img @src=&quot;setup.ImagePath+&#39;horrorVu.png&#39;&quot; style=&quot;display: block; margin: auto; width:60%;float:right;padding:20px&quot;&gt;
 This game was created by:
