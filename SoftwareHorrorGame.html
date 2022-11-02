@@ -1187,6 +1187,8 @@ For the best experience:
 * please turn on your sound and headphones
 * have paper and pen at hand to take notes
 * everything runs in chrome or firefox (safari won&#39;t work)
+* the hints are there to help you, use them when you need (you won&#39;t be penalized)
+* don&#39;t worry too much about your &#39;lives&#39; and the timer, you will never &#39;die&#39; and can always finish the game
 &lt;a data-passage=&quot;IntroductionText&quot; class=&quot;link-internal link-image&quot;&gt;
 	&lt;img @src=&quot;setup.ImagePath+&#39;horrorVu.png&#39;&quot; style=&quot;display: block; margin: auto;&quot;
       width=100%&gt;
@@ -1352,7 +1354,7 @@ You hesitate and the cat starts hissing: &quot;starting a new project! What is i
 	&lt;&lt;print _textI&gt;&gt;&lt;&lt;/replace&gt;&gt;
 
 &lt;&lt;if _checkedA and _checkedB and _checkedC and _checkedD and not _checkedF and not _checkedG and not _checkedI&gt;&gt;
-    	&lt;&lt;set _continue = &quot;You are almost there, all the selections are correct!&lt;br&gt;But it seems that your documentation and the organization of all versions of your code is not perfect yet. You should fix that!&lt;br&gt;&lt;br&gt;Would you like to &lt;&lt;button [[work on documentation|DocumentationIntro]]&gt;&gt;&lt;&lt;/button&gt;&gt; or maybe &lt;&lt;button [[clean-up|versioncontrol]]&gt;&gt;&lt;&lt;/button&gt;&gt; those messy versions.&quot;&gt;&gt;
+    	&lt;&lt;set _continue = &quot;Awesome, all the selections are correct!&lt;br&gt;But it seems that your documentation and the organization of all versions of your code is not perfect yet. You should fix that!&lt;br&gt;&lt;br&gt;Would you like to &lt;&lt;button [[work on documentation|DocumentationIntro]]&gt;&gt;&lt;&lt;/button&gt;&gt; or maybe &lt;&lt;button [[clean-up|versioncontrol]]&gt;&gt;&lt;&lt;/button&gt;&gt; those messy versions.&quot;&gt;&gt;
     &lt;&lt;else&gt;&gt;
     	&lt;&lt;set _continue = &quot;Well this is awkward, that&#39;s not quite right... You just lost one of your cat lives.&quot;&gt;&gt;
         &lt;&lt;set $CurHP = $CurHP-1&gt;&gt;&lt;&lt;run Health($CurHP, $MaxHP, &quot;horizontalhealthbar&quot;, true)&gt;&gt;
@@ -3989,7 +3991,7 @@ Figuring out what the latest version was, was already a hassle, but it&#39;s imp
 &lt;&lt;set _continue = &quot;&quot;&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-Building on this experience, you want to create a workflow for when you collaborate with someone on your code next time, but what do you think would be useful?
+Building on this experience, you want to create a workflow for when you collaborate with someone on your code next time, but what do you think could be useful?
 
 * &lt;label&gt;&lt;&lt;checkbox &quot;_checkedA&quot; false true autocheck&gt;&gt; The up-to-date version of the code is kept in a repository that&#39;s version-controlled. That version is always the current version of the truth.&lt;/label&gt;\
 &lt;span id=&quot;textA&quot;&gt;&lt;&lt;print _textA&gt;&gt;&lt;/span&gt;
