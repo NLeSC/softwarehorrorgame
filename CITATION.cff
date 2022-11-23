@@ -1,0 +1,47 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Software Horror Escape Room: Publish or Purrrish'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Lieke
+    name-particle: de
+    family-names: Boer
+    email: l.deboer@esciencecenter.nl
+    affiliation: Netherlands eScience Center
+    orcid: 'https://orcid.org/0000-0003-3381-2040'
+  - given-names: Lena
+    family-names: Karvovskaya
+    email: e.karvovskaya@vu.nl
+    affiliation: Vrije Universiteit Amsterdam
+    orcid: 'https://orcid.org/0000-0001-7777-5603'
+  - given-names: Carlos
+    family-names: Martinez-Ortiz
+    email: c.martinez-ortiz@esciencecenter.nl
+    orcid: 'https://orcid.org/0000-0001-5565-7577'
+    affiliation: Netherlands eScience Center
+  - given-names: Elisa
+    family-names: Rodenburg
+    email: e.j.rodenburg@vu.nl
+    affiliation: Vrije Universiteit Amsterdam
+    orcid: 'https://orcid.org/0000-0001-6068-9792'
+  - given-names: Dan
+    family-names: Rudmann
+    email: d.a.rudmann@library.leidenuniv.nl
+    affiliation: Leiden University Library
+    orcid: 'https://orcid.org/0000-0002-8667-9063'
+  - given-names: Stephanie
+    name-particle: van de
+    family-names: Sandt
+    email: s.van.de.sandt@vu.nl
+    orcid: 'https://orcid.org/0000-0002-9576-1974'
+    affiliation: Vrije Universiteit Amsterdam
+  - given-names: Meron
+    family-names: Vermaas
+    email: m.vermaas@vu.nl
+    affiliation: Vrije Universiteit Amsterdam
+    orcid: 'https://orcid.org/0000-0003-4714-3941'
